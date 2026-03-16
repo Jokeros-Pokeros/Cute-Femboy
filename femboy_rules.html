@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Правила - Femboy_Cute</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #4a148c;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            background-image: 
+                linear-gradient(0deg, transparent 24%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.2) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2) 76%, transparent 77%, transparent),
+                linear-gradient(90deg, transparent 24%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.2) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2) 76%, transparent 77%, transparent);
+            background-size: 40px 40px;
+            background-color: #4a148c;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent 30%, rgba(217, 70, 239, 0.03) 50%, transparent 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-top: 20px;
+            animation: slideDown 0.8s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-back {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #ec4899;
+            background: rgba(236, 72, 153, 0.1);
+            color: #ec4899;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .nav-back:hover {
+            background: rgba(236, 72, 153, 0.3);
+            box-shadow: 0 0 15px rgba(236, 72, 153, 0.5);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+            text-shadow: 0 0 20px rgba(217, 70, 239, 0.6);
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #ec4899, #d946ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
+
+        .divider {
+            border-top: 2px solid #ec4899;
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        .rules-container {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .rule {
+            background: rgba(217, 70, 239, 0.05);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ec4899;
+            border-radius: 10px;
+            border: 2px solid rgba(236, 72, 153, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .rule:hover {
+            background: rgba(217, 70, 239, 0.1);
+            box-shadow: 0 4px 15px rgba(236, 72, 153, 0.2);
+        }
+
+        .rule-number {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #d946ef;
+            margin-bottom: 8px;
+        }
+
+        .rule-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #ec4899;
+            margin-bottom: 10px;
+        }
+
+        .rule-text {
+            color: #ffffff;
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        .punishment {
+            background: rgba(236, 72, 153, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            color: #f472b6;
+            font-size: 0.95em;
+            border-left: 3px solid #d946ef;
+        }
+
+        .warning-box {
+            background: rgba(236, 72, 153, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 2px solid #ec4899;
+        }
+
+        .warning-title {
+            color: #ec4899;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .warning-text {
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        .not-recommended {
+            background: rgba(217, 70, 239, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: 2px solid rgba(236, 72, 153, 0.3);
+        }
+
+        .not-recommended-title {
+            color: #ec4899;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .recommendation-list {
+            list-style: none;
+        }
+
+        .recommendation-list li {
+            color: #f472b6;
+            margin: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .recommendation-list li:before {
+            content: "⚠️";
+            position: absolute;
+            left: 0;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #ec4899;
+            text-align: center;
+            color: #c084fc;
+            opacity: 0.8;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .rule {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="nav-back">← Вернуться на главную</a>
+            <h1>📋 Правила Femboy_Cute</h1>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="warning-box">
+            <div class="warning-title">⚠️ Общее правило</div>
+            <div class="warning-text">
+                Мат, порно, хентай, и большинство 18+ разрешено, но только в рамках уважения и без шок-контента.
+            </div>
+        </div>
+
+        <div class="rules-container">
+            <div class="rule">
+                <div class="rule-number">🚫 Правило 1</div>
+                <div class="rule-title">Спам, флуд и ASCII-графика запрещены</div>
+                <div class="rule-text">
+                    Бессмысленные сообщения, массовые одинаковые тексты, символные полотна.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 1–7 дней.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">🚫 Правило 2</div>
+                <div class="rule-title">Шок-контент запрещён</div>
+                <div class="rule-text">
+                    Сюда относится gore, реалистичное насилие, расчленёнка, травмы, жестокие видео.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 14 дней → бан при повторе.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">🚫 Правило 3</div>
+                <div class="rule-title">Стикеры/материалы с тегом "18+ шок" запрещены</div>
+                <div class="rule-text">
+                    Обычный 18+ разрешён, но контент, нарушающий законы - нет.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 7 дней.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">🚫 Правило 4</div>
+                <div class="rule-title">Запрещено отправлять сообщения от имени канала</div>
+                <div class="rule-text">
+                    Постить нужно только со своего аккаунта.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 7–30 дней.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">🚫 Правило 5</div>
+                <div class="rule-title">Неподобающий контент в профиле</div>
+                <div class="rule-text">
+                    Профиль (аватар, имя, био) не должен содержать оскорблений, шока или провокаций.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 7 дней.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">😡 Правило 6</div>
+                <div class="rule-title">Оскорбления, угрозы, травля</div>
+                <div class="rule-text">
+                    Можно ругаться в шутку, но нельзя оскорблять личность.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 1–14 дней → бан при повторе.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">🚫 Правило 7</div>
+                <div class="rule-title">Дискриминация запрещена</div>
+                <div class="rule-text">
+                    По национальности, религии, ориентации и любым другим признакам.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 14 дней → бан.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">🔥 Правило 8</div>
+                <div class="rule-title">Провокации, разжигание конфликтов, травля</div>
+                <div class="rule-text">
+                    В том числе косвенные или "юмористические" попытки вывести человека на спор.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 7 дней.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">🔫 Правило 9</div>
+                <div class="rule-title">Пропаганда насилия, оружия, наркотиков</div>
+                <div class="rule-text">
+                    Обсуждать можно, пропагандировать - нет.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 7 дней.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">🔐 Правило 10</div>
+                <div class="rule-title">Разглашение личной информации</div>
+                <div class="rule-text">
+                    Личные фото, переписки, контакты, информация о модерации - запрещены.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 30 дней → бан.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">📵 Правило 11</div>
+                <div class="rule-title">Реклама без разрешения</div>
+                <div class="rule-text">
+                    Сторонние проекты, каналы, сайты, файлы.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 7–30 дней.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">🛑 Правило 12</div>
+                <div class="rule-title">Распространение вирусов, уязвимых файлов</div>
+                <div class="rule-text">
+                    Включая .exe, скрипты, кряки.
+                </div>
+                <div class="punishment">⏱️ Наказание: мгновенный бан.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">💳 Правило 13</div>
+                <div class="rule-title">Продажа аккаунтов / карт / "услуг"</div>
+                <div class="rule-text">
+                    Чат - не рынок.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 14 дней.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">📰 Правило 14</div>
+                <div class="rule-title">Ложная информация, фейки</div>
+                <div class="rule-text">
+                    Выдуманные истории о пользователях, обман, манипуляции.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 3–7 дней.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">💰 Правило 15</div>
+                <div class="rule-title">Попрошайничество</div>
+                <div class="rule-text">
+                    Просьбы о деньгах, донатах, вещах, аккаунтах.
+                </div>
+                <div class="punishment">⏱️ Наказание: предупреждение → мут.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">🎭 Правило 16</div>
+                <div class="rule-title">Выдача себя за администрацию</div>
+                <div class="rule-text">
+                    Запрещено изображать модератора.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 30 дней → бан.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">🛡 Правило 17</div>
+                <div class="rule-title">Критика модерации в конфликтах</div>
+                <div class="rule-text">
+                    Обсуждать можно, но не переходить на личности и не устраивать бунт.
+                </div>
+                <div class="punishment">⏱️ Наказание: мут 3–14 дней.</div>
+            </div>
+
+            <div class="rule">
+                <div class="rule-number">🔄 Правило 18</div>
+                <div class="rule-title">Использование доп-аккаунтов для обхода наказаний</div>
+                <div class="rule-text">
+                    Серьёзное нарушение.
+                </div>
+                <div class="punishment">⏱️ Наказание: перманентный бан.</div>
+            </div>
+        </div>
+
+        <div class="not-recommended">
+            <div class="not-recommended-title">⚠️ Не рекомендуется:</div>
+            <ul class="recommendation-list">
+                <li>Злоупотреблять Caps Lock</li>
+                <li>Спамить смайлами</li>
+                <li>Ставить кучу реакций под каждым сообщением</li>
+                <li>Игнорировать предупреждения модерации</li>
+            </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="footer">
+            <p>🍯 Femboy_Cute Правила © 2026 🍯</p>
+        </div>
+    </div>
+</body>
+</html>

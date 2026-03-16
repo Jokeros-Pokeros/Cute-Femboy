@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основные ссылки - Femboy_Cute</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #4a148c;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            background-image: 
+                linear-gradient(0deg, transparent 24%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.2) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2) 76%, transparent 77%, transparent),
+                linear-gradient(90deg, transparent 24%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.2) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2) 76%, transparent 77%, transparent);
+            background-size: 40px 40px;
+            background-color: #4a148c;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent 30%, rgba(217, 70, 239, 0.03) 50%, transparent 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-top: 20px;
+            animation: slideDown 0.8s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-back {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #ec4899;
+            background: rgba(236, 72, 153, 0.1);
+            color: #ec4899;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .nav-back:hover {
+            background: rgba(236, 72, 153, 0.3);
+            box-shadow: 0 0 15px rgba(236, 72, 153, 0.5);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+            text-shadow: 0 0 20px rgba(217, 70, 239, 0.6);
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #ec4899, #d946ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
+
+        .divider {
+            border-top: 2px solid #ec4899;
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+
+        .content {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .intro-box {
+            background: rgba(217, 70, 239, 0.05);
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid rgba(236, 72, 153, 0.3);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .intro-text {
+            color: #ffffff;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .intro-emphasis {
+            color: #ec4899;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-shadow: 0 0 10px rgba(236, 72, 153, 0.3);
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .link-card {
+            background: rgba(217, 70, 239, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid rgba(236, 72, 153, 0.3);
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            animation: cardPop 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .link-card:nth-child(1) { animation-delay: 0.2s; }
+        .link-card:nth-child(2) { animation-delay: 0.4s; }
+
+        @keyframes cardPop {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .link-card:hover {
+            background: rgba(217, 70, 239, 0.15);
+            box-shadow: 0 6px 20px rgba(236, 72, 153, 0.3);
+            transform: translateY(-8px);
+        }
+
+        .link-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .link-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ec4899;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px rgba(236, 72, 153, 0.3);
+        }
+
+        .link-description {
+            color: #f472b6;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 30px;
+            background: linear-gradient(135deg, #ec4899, #d946ef);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            font-size: 1em;
+            box-shadow: 0 4px 15px rgba(217, 70, 239, 0.3);
+            align-self: center;
+        }
+
+        .cta-button:hover {
+            box-shadow: 0 6px 25px rgba(236, 72, 153, 0.6);
+            transform: translateY(-3px);
+        }
+
+        .cta-button:active {
+            transform: translateY(-1px);
+        }
+
+        .info-box {
+            background: rgba(236, 72, 153, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            border: 2px solid #ec4899;
+            text-align: center;
+        }
+
+        .info-text {
+            color: #f472b6;
+            font-size: 0.95em;
+            line-height: 1.7;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #ec4899;
+            text-align: center;
+            color: #c084fc;
+            opacity: 0.8;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .link-card {
+                padding: 20px;
+            }
+
+            .link-icon {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="nav-back">← Вернуться на главную</a>
+            <h1>🔗 Основные ссылки</h1>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="intro-box">
+            <div class="intro-text">
+                Добро пожаловать! Выбери удобный способ присоединиться к нашему сообществу
+            </div>
+            <div class="intro-emphasis">
+                🍯 Honeyfemboys 🍯
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="links-grid">
+                <div class="link-card">
+                    <div>
+                        <div class="link-icon">📢</div>
+                        <div class="link-title">Основной канал</div>
+                        <div class="link-description">
+                            Здесь выходят все посты, новости и обновления. Подписывайся, чтобы ничего не пропустить!
+                        </div>
+                    </div>
+                    <a href="https://t.me/+OGpzTU4XaAQwZmRi" target="_blank" class="cta-button">
+                        🔗 Перейти в канал
+                    </a>
+                </div>
+
+                <div class="link-card">
+                    <div>
+                        <div class="link-icon">💬</div>
+                        <div class="link-title">Чат сообщества</div>
+                        <div class="link-description">
+                            Общайся с другими участниками, делись впечатлениями и общайся в приватной обстановке!
+                        </div>
+                    </div>
+                    <a href="https://t.me/+GbVwbnGHqfQ5NmYy" target="_blank" class="cta-button">
+                        🔗 Войти в чат
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="info-text">
+                    ⚠️ <strong>Помни:</strong> Контент только для взрослых 18+<br>
+                    📋 Перед входом ознакомься с <a href="rules.html" style="color: #ec4899; text-decoration: underline;">правилами</a><br>
+                    🍯 Спасибо, что выбрал нас!
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="footer">
+            <p>🍯 Femboy_Cute © 2026 🍯</p>
+            <p>Место, где каждый может быть собой</p>
+        </div>
+    </div>
+</body>
+</html>
